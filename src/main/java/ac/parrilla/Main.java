@@ -16,7 +16,7 @@ public class Main{
         int input = scanner.nextInt();
 
         for (int i = 0; i <= input; i++){
-            char s = (char) random.nextInt(Character.MAX_VALUE+1);
+            char s = (char) random.nextInt(Byte.MAX_VALUE+128);
             sb.insert(i, s);
         }
         System.out.println(sb);
