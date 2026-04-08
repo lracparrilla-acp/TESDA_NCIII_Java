@@ -15,8 +15,8 @@ public class Main{
         System.out.println("Input how many characters: ");
         int input = scanner.nextInt();
 
-        for (int i = 0; i <= input; i++){
-            char s = (char) random.nextInt(Byte.MAX_VALUE+128);
+        for (int i = 0; i <= input-1; i++){
+            char s = (char) random.nextInt(33, 127 );
             sb.insert(i, s);
         }
         System.out.println(sb);
