@@ -13,7 +13,7 @@ public class Task4 {
         String word = scanner.next().toLowerCase();
         StringBuilder stringBuilder = new StringBuilder(word).reverse();
 
-        if (!word.equals(stringBuilder.toString())) {
+        if (!stringBuilder.toString().equals(word)) {
             System.out.println("Your word \n" + stringBuilder.reverse() + "\nis NOT a palindrome.");
         } else System.out.println("Your word \n" + stringBuilder + "\nis a palindrome.");
 
